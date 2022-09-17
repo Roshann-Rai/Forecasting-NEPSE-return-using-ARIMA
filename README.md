@@ -6,3 +6,5 @@ a. gdp_growth_rate.csv from https://www.macrotrends.net/countries/NPL/nepal/gdp-
 b. nepse.csv from https://www.investopaper.com/news/history-of-nepse/
 
 c. nepse_index_2022_2019.csv from https://merolagani.com/Indices.aspx
+
+d. gdp.csv from https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=NP
