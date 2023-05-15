@@ -6,9 +6,7 @@ pacman::p_load(dplyr, tidyverse, ggplot2, readr, xts, forecast,TSstudio, tseries
 
 #Importing datasets
 nepse <- read.csv("https://raw.githubusercontent.com/Roshann-Rai/Time-series-analysis-of-GDP-and-NEPSE-data/master/nepse.csv")
-gdp_growth_rate <- read.csv("https://raw.githubusercontent.com/Roshann-Rai/Time-series-analysis-of-GDP-and-NEPSE-data/master/gdp_growth_rate_np.csv")
-nepse_2022_2014_daily_returns <- read.csv("https://raw.githubusercontent.com/Roshann-Rai/Time-series-analysis-of-GDP-and-NEPSE-data/master/nepse_index_2022_2014.csv")
-gdp <- read_csv("https://raw.githubusercontent.com/Roshann-Rai/Time-series-analysis-of-GDP-and-NEPSE-data/master/gdp.csv", show_col_types = F)
+
 
 #Lets look the datasets
 head(nepse, 5)
@@ -129,6 +127,8 @@ nepse_1997_2014_ts
 #Merging the xts objects
 nepse_ts <- rbind(nepse_1997_2014_ts, nepse_2015_2022_ts)
 nepse_ts
+
+
 
 #Plotting the nepse index
 plot(nepse_ts,
